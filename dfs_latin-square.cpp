@@ -34,3 +34,18 @@ void Graph::createGraph(int n, Graph &g) {
             g.addEdge(i, 0);
     }
 }
+int main() {
+
+    int n;
+    cout << "Inputi n = ";
+    cin >> n;
+    cout << "Latin Square me Depth First Search" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        Graph g;
+        g.createGraph(n, g);
+        g.DFS(i);
+        cout << endl;
+    }
+    return 0;
+}
