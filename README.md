@@ -2,6 +2,37 @@
 
 #
 
+### Problemi
+`A Latin Square is a n x n grid filled by n distinct numbers each appearing exactly once in each row and column. Given an input n, we have to print a n x n matrix consisting of numbers from 1 to n each appearing exactly once in each row and each column.`
+
+#### Shembull
+`Input: 3`
+
+
+`Output:`
+
+`0 1 2`
+
+
+`2 0 1`
+
+
+`2 1 0`
+
+`Input: 5`
+
+`Output:`
+
+`0 1 2 3 4`
+
+ `4 0 1 2 3`
+
+ `3 4 0 1 2`
+
+ `2 3 4 0 1`
+
+ `1 2 3 4 0`
+
 ### DFS Approach
 
 
@@ -16,7 +47,7 @@ void Graph::createGraph(int n, Graph &g) {
     }
 }
 ```
-`Time Complexity:O(n)`
+`Time Complexity: O(n)`
 
 ---
 ```cpp
@@ -74,19 +105,16 @@ int main() {
 `Time Complexity: 
  Per nje i te cfaredoshme time complexity per: 
  g.createGraph(n, g) do te jete O(n).
- g.DFS(i) do te jete` $0\ast(2\ast n - 1). $
-
-
-Totali: $0\ast(n +2\ast n -1)=0\ast(3\ast n-1)$
-
-
+ g.DFS(i) do te jete O(2*n - 1). 
+ Totali: O(n + 2*n - 1) = O(3*n - 1)
+`
 
 ---
- Per i prej 0 deri ne n kemi n vlera te ndryshme per te cilat time complexity i llogaritur me siper nuk ndryshon(mbetet e njejta).
+`Per i prej 0 deri ne n kemi n vlera te ndryshme per te cilat time complexity i llogaritur me siper nuk ndryshon(mbetet e njejta).`
 
-> Konkludojme qe Time Complexity total per DFS eshte:
-
- $$n\ast(3\ast n-1)= 3\ast n^{2} - n \Rightarrow 0\ast(3\ast n^2-n)$$
+---
+`Konkludojme qe Time Complexity total per DFS eshte: 
+ n*(3*n - 1) = 3n^2 - n => O(3n^2 - n)`
 
 ---
 ### BFS Approach
@@ -206,7 +234,30 @@ g.BFS(i);
 `I bie qe Time Complexity per forloop-en e mesiperme eshte O(n*n) `
 
  ---
- Ndersa totali: 
- $$n+n\ast n=n\ast n + n\Rightarrow 0\ast(n\ast n +n)$$
+ `Ndersa totali: n + n*n = n*n + n => O(n*n + n)`
 
  ## Space Complexity
+
+ ### DFS
+
+ `Space Complexity: Sic e dijm DFS e ka O(d), ku d eshte lartesija e pemes.`
+
+ ---
+
+ `Ne rastin tone grafi qe e kemi konstruktuar eshte me lartesi n`
+
+ ---
+ `Dmth se O(n) eshte kompleksiteti hapsinor per g.DFS()`
+
+ ---
+ `Ne kod e kemi DFS ne loop, por kjo nuk ka lidhje se DFS mbishkruhet per cdo i`
+
+ ---
+ ### BFS
+ `Space Complexity: E dijm qe per nje peme binare space complexity eshte 2^n, kurse per pemen x-nare eshte x^n`
+
+ ---
+ `Ne rastin tone grafi i ndertuar eshte unar, prandaj kompleksiteti hapsinor per g.BFS() eshte 1^n apo 1`
+
+ ---
+ `Perseri edhe pse BFS() eshte ne loop, kompleksiteti hapesinor eshte 1`
