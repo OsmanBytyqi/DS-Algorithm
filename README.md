@@ -74,16 +74,19 @@ int main() {
 `Time Complexity: 
  Per nje i te cfaredoshme time complexity per: 
  g.createGraph(n, g) do te jete O(n).
- g.DFS(i) do te jete O(2*n - 1). 
- Totali: O(n + 2*n - 1) = O(3*n - 1)
-`
+ g.DFS(i) do te jete` $0\ast(2\ast n - 1). $
+
+
+Totali: $0\ast(n +2\ast n -1)=0\ast(3\ast n-1)$
+
+
 
 ---
-`Per i prej 0 deri ne n kemi n vlera te ndryshme per te cilat time complexity i llogaritur me siper nuk ndryshon(mbetet e njejta).`
+ Per i prej 0 deri ne n kemi n vlera te ndryshme per te cilat time complexity i llogaritur me siper nuk ndryshon(mbetet e njejta).
 
----
-`Konkludojme qe Time Complexity total per DFS eshte: 
- n*(3*n - 1) = 3n^2 - n => O(3n^2 - n)`
+> Konkludojme qe Time Complexity total per DFS eshte:
+
+ $$n\ast(3\ast n-1)= 3\ast n^{2} - n \Rightarrow 0\ast(3\ast n^2-n)$$
 
 ---
 ### BFS Approach
@@ -203,6 +206,7 @@ g.BFS(i);
 `I bie qe Time Complexity per forloop-en e mesiperme eshte O(n*n) `
 
  ---
- `Ndersa totali: n + n*n = n*n + n => O(n*n + n)`
+ Ndersa totali: 
+ $$n+n\ast n=n\ast n + n\Rightarrow 0\ast(n\ast n +n)$$
 
  ## Space Complexity
