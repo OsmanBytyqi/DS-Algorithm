@@ -3,7 +3,10 @@
 #
 
 ### Problemi
-`A Latin Square is a n x n grid filled by n distinct numbers each appearing exactly once in each row and column. Given an input n, we have to print a n x n matrix consisting of numbers from 1 to n each appearing exactly once in each row and each column.`
+```
+A Latin Square is a n x n grid filled by n distinct numbers each appearing exactly once in each row and column. 
+Given an input n, we have to print a n x n matrix consisting of numbers from 1 to n each appearing exactly once in each row and each column.
+```
 
 #### Shembull
 `Input: 3`
@@ -11,27 +14,23 @@
 
 `Output:`
 
-`0 1 2`
-
-
-`2 0 1`
-
-
-`2 1 0`
+```
+0 1 2
+2 0 1
+2 1 0
+```
 
 `Input: 5`
 
 `Output:`
 
-`0 1 2 3 4`
-
- `4 0 1 2 3`
-
- `3 4 0 1 2`
-
- `2 3 4 0 1`
-
- `1 2 3 4 0`
+```
+0 1 2 3 4
+4 0 1 2 3
+3 4 0 1 2
+2 3 4 0 1
+1 2 3 4 0
+```
 
 ### DFS Approach
 
