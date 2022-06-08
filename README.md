@@ -2,6 +2,37 @@
 
 #
 
+### Problemi
+`A Latin Square is a n x n grid filled by n distinct numbers each appearing exactly once in each row and column. Given an input n, we have to print a n x n matrix consisting of numbers from 1 to n each appearing exactly once in each row and each column.`
+
+#### Shembull
+`Input: 3`
+
+
+`Output:`
+
+`0 1 2`
+
+
+`2 0 1`
+
+
+`2 1 0`
+
+`Input: 5`
+
+`Output:`
+
+`0 1 2 3 4`
+
+ `4 0 1 2 3`
+
+ `3 4 0 1 2`
+
+ `2 3 4 0 1`
+
+ `1 2 3 4 0`
+
 ### DFS Approach
 
 
@@ -16,7 +47,7 @@ void Graph::createGraph(int n, Graph &g) {
     }
 }
 ```
-`Time Complexity:O(n)`
+`Time Complexity: O(n)`
 
 ---
 ```cpp
@@ -206,3 +237,27 @@ g.BFS(i);
  `Ndersa totali: n + n*n = n*n + n => O(n*n + n)`
 
  ## Space Complexity
+
+ ### DFS
+
+ `Space Complexity: Sic e dijm DFS e ka O(d), ku d eshte lartesija e pemes.`
+
+ ---
+
+ `Ne rastin tone grafi qe e kemi konstruktuar eshte me lartesi n`
+
+ ---
+ `Dmth se O(n) eshte kompleksiteti hapsinor per g.DFS()`
+
+ ---
+ `Ne kod e kemi DFS ne loop, por kjo nuk ka lidhje se DFS mbishkruhet per cdo i`
+
+ ---
+ ### BFS
+ `Space Complexity: E dijm qe per nje peme binare space complexity eshte 2^n, kurse per pemen x-nare eshte x^n`
+
+ ---
+ `Ne rastin tone grafi i ndertuar eshte unar, prandaj kompleksiteti hapsinor per g.BFS() eshte 1^n apo 1`
+
+ ---
+ `Perseri edhe pse BFS() eshte ne loop, kompleksiteti hapesinor eshte 1`
