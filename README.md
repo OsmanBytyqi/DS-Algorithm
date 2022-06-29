@@ -14,9 +14,7 @@ void Graph::createGraph(int n, Graph &g) {
     }
 }
 ```
-`Time Complexity: O(n)`
 
----
 ```cpp
 void Graph::DFS(int v)
 {
@@ -63,17 +61,10 @@ int main() {
     return 0;
 }
 ```
-`Time Complexity: 
- Per nje i te cfaredoshme time complexity per: 
- g.createGraph(n, g) do te jete O(n).
- g.DFS(i) do te jete O(2*n - 1). 
- Totali: O(n + 2*n - 1) = O(3*n - 1)
-`
 
 
 ### BFS Approach
 
----
 ```cpp
 Graph::Graph(int V)
 {
