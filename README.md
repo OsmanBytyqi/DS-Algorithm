@@ -70,10 +70,7 @@ int main() {
  Totali: O(n + 2*n - 1) = O(3*n - 1)
 `
 
-`Konkludojme qe Time Complexity total per DFS eshte: 
- n*(3*n - 1) = 3n^2 - n => O(3n^2 - n)`
 
----
 ### BFS Approach
 
 ---
@@ -166,7 +163,7 @@ int main() {
 
 
 
- ```
+ ```cpp
  for (int i = 0; i < n; i++) {
         g.BFS(i);
         cout << endl;
